@@ -1,0 +1,20 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de jogo",
+      "type": "income",
+      "category": "Venda",
+      "price": 16000,
+      "createdAt": "2022-11-09T15:48:58.824Z"
+    },
+    {
+      "id": 2,
+      "description": "Jogo Hogwarts Legacy",
+      "type": "outcome",
+      "category": "Compra",
+      "price": 30,
+      "createdAt": "2022-11-10T13:18:32.892Z"
+    }
+  ]
+}

@@ -1,18 +1,19 @@
 import styled from 'styled-components'
 
-export const SearchContainer = styled.div`
+export const SearchContainer = styled.form`
   width: 100%;
-  min-width: 957px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 
   display: flex;
   align-items: center;
   gap: 1rem;
 
-  padding: 0 10rem;
   margin-top: 4rem;
 
   input {
-    width: 70rem;
+    flex: 1;
     background-color: ${({ theme }) => theme['gray-900']};
     color: ${({ theme }) => theme['gray-100']};
     padding: 1rem;
@@ -20,17 +21,21 @@ export const SearchContainer = styled.div`
     box-shadow: none;
     border: none;
     border-radius: 8px;
+
+    &::placeholder {
+      color: ${({ theme }) => theme['gray-500']};
+    }
   }
 
   button {
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.875rem 2rem;
+    padding: 0.875rem 1.5rem;
     background: transparent;
-    border: 1px solid ${({ theme }) => theme['green-500']};
+    border: 1px solid ${({ theme }) => theme['green-300']};
     border-radius: 8px;
-    color: ${({ theme }) => theme['green-500']};
+    color: ${({ theme }) => theme['green-300']};
     cursor: pointer;
     transition: all 0.2s;
 
@@ -40,7 +45,8 @@ export const SearchContainer = styled.div`
     }
 
     &:hover {
-      box-shadow: 0 0 9px ${({ theme }) => theme['green-500']};
+      box-shadow: 0 0 8px ${({ theme }) => theme['green-500']};
+      filter: saturate(1.4);
       /*background-color: ${({ theme }) => theme['green-500']};
       color: ${({ theme }) => theme['gray-300']};*/
     }

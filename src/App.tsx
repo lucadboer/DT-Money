@@ -1,9 +1,12 @@
+import { TransactionProvider } from './contexts/TransactionsContext'
 import { Transactions } from './pages/Transactions'
 
 function App() {
   return (
     <div>
-      <Transactions />
+      <TransactionProvider>
+        <Transactions />
+      </TransactionProvider>
     </div>
   )
 }

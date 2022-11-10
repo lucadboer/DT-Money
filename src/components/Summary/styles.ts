@@ -1,11 +1,13 @@
 import styled, { css } from 'styled-components'
 
 export const SummaryContainer = styled.div`
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-
-  padding: 0 10rem;
   margin-top: -5rem;
 `
 

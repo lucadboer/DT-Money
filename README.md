@@ -29,4 +29,4 @@ In addition to all React fundamentals, ContextAPI was used to share the most com
 ## 💛 Contact
 
 - Email --> luca.boer@outlook.com
-- Linkedin --> https://www.linkedin.com/in/luca-destefano-boer-99674121b/
+- Linkedin --> https://www.linkedin.com/in/luca-destefano-boer/

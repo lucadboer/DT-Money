@@ -15,6 +15,22 @@
       "category": "Compra",
       "price": 30,
       "createdAt": "2022-11-10T13:18:32.892Z"
+    },
+    {
+      "description": "Comida japa",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 200,
+      "createdAt": "2022-11-11T23:43:55.895Z",
+      "id": 3
+    },
+    {
+      "description": "Chocolatinho do momoi",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 5,
+      "createdAt": "2022-11-12T00:03:46.002Z",
+      "id": 4
     }
   ]
 }

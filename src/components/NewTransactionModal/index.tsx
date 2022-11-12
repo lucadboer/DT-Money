@@ -12,6 +12,8 @@ import {
   TransactionTypeContainer,
 } from './styles'
 import { api } from '../../libs/axios'
+import { useContext } from 'react'
+import { TransactionContext } from '../../contexts/TransactionsContext'
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
@@ -23,6 +25,8 @@ const newTransactionFormSchema = z.object({
 type NewTransactionInputs = z.infer<typeof newTransactionFormSchema>
 
 export function NewTransactionModal(data: NewTransactionInputs) {
+  const { createNewTransaction } = useContext(TransactionContext)
+
   const {
     register,
     handleSubmit,
@@ -36,13 +40,7 @@ export function NewTransactionModal(data: NewTransactionInputs) {
   async function handleCreateNewTransaction(data: NewTransactionInputs) {
     const { description, type, category, price } = data
 
-    await api.post('transactions', {
-      description,
-      type,
-      category,
-      price,
-      createdAt: new Date(),
-    })
+    createNewTransaction(data)
 
     reset()
   }

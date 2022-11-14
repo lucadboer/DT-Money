@@ -3,6 +3,9 @@ import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 import * as z from 'zod'
 import { useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useContext } from 'react'
+import { TransactionContext } from '../../contexts/TransactionsContext'
+import 'animate.css'
 
 import {
   CloseButton,
@@ -11,9 +14,6 @@ import {
   TransactionTypeButton,
   TransactionTypeContainer,
 } from './styles'
-import { api } from '../../libs/axios'
-import { useContext } from 'react'
-import { TransactionContext } from '../../contexts/TransactionsContext'
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
@@ -24,7 +24,7 @@ const newTransactionFormSchema = z.object({
 
 type NewTransactionInputs = z.infer<typeof newTransactionFormSchema>
 
-export function NewTransactionModal(data: NewTransactionInputs) {
+export function NewTransactionModal() {
   const { createNewTransaction } = useContext(TransactionContext)
 
   const {
@@ -40,15 +40,20 @@ export function NewTransactionModal(data: NewTransactionInputs) {
   async function handleCreateNewTransaction(data: NewTransactionInputs) {
     const { description, type, category, price } = data
 
-    createNewTransaction(data)
+    createNewTransaction({
+      description,
+      type,
+      category,
+      price,
+    })
 
     reset()
   }
 
   return (
     <Dialog.Portal>
-      <Overlay />
-      <Content>
+      <Overlay className="animate__animated animate__fadeIn" />
+      <Content className="animate__animated animate__fadeIn">
         <CloseButton>
           <X size={24} />
         </CloseButton>
@@ -59,16 +64,19 @@ export function NewTransactionModal(data: NewTransactionInputs) {
             autoFocus
             type="text"
             placeholder="Descrição"
+            required
             {...register('description')}
           />
           <input
             type="number"
             placeholder="Preço"
+            required
             {...register('price', { valueAsNumber: true })}
           />
           <input
             type="text"
             placeholder="Categoria"
+            required
             {...register('category')}
           />
 

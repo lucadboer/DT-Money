@@ -8,6 +8,7 @@ export const Overlay = styled(Dialog.Overlay)`
   height: 100vh;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.75);
+  animation-duration: 0.5s;
 `
 
 export const CloseButton = styled(Dialog.Close)`
@@ -36,6 +37,7 @@ export const Content = styled(Dialog.Content)`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
 
   form {
     width: 100%;

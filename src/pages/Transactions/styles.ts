@@ -5,6 +5,7 @@ export const TransactionsContainer = styled.main`
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  padding-bottom: 1.5rem;
 `
 
 export const TransactionsTable = styled.table`

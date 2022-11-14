@@ -25,12 +25,44 @@
       "id": 3
     },
     {
-      "description": "Chocolatinho do momoi",
+      "description": "Bug Bounty Ifood",
+      "type": "income",
+      "category": "Hacking",
+      "price": 200,
+      "createdAt": "2022-11-14T11:50:12.212Z",
+      "id": 5
+    },
+    {
+      "description": "RTX 3050",
       "type": "outcome",
-      "category": "Alimentação",
-      "price": 5,
-      "createdAt": "2022-11-12T00:03:46.002Z",
-      "id": 4
+      "category": "PC",
+      "price": 2000,
+      "createdAt": "2022-11-14T11:54:33.920Z",
+      "id": 6
+    },
+    {
+      "description": "Bug Bounty Riot Games",
+      "type": "income",
+      "category": "Hacking",
+      "price": 1000,
+      "createdAt": "2022-11-14T12:45:33.834Z",
+      "id": 7
+    },
+    {
+      "description": "Rocketseat Ignite",
+      "type": "outcome",
+      "category": "Desenvolvimento",
+      "price": 1700,
+      "createdAt": "2022-11-14T17:13:03.286Z",
+      "id": 8
+    },
+    {
+      "description": "Livro Clean Code",
+      "type": "outcome",
+      "category": "Livros",
+      "price": 50,
+      "createdAt": "2022-11-14T17:23:21.942Z",
+      "id": 9
     }
   ]
 }

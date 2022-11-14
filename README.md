@@ -12,6 +12,11 @@ Third project developed on Rocketseat's Ignite track with ReactJS, Styled-Compon
 
 In addition to all React fundamentals, ContextAPI was used to share the most complex data between components, the creation of a Fake API through the json-server, a little hooks, and Styled-Components was applied for styling.
 
+## Scripts
+
+- Para utilizar a fake API, rode o comando "npm run dev:server" no terminal do seu editor de código
+- To use a fake API, run the command "npm run dev:server" in your code editor's terminal
+
 ## 🛠 Technologies
 
 - React

@@ -1,5 +1,7 @@
 # DT Money
 
+![preview](./.github/preview.png)
+
 > Trilha Ignite
 
 Terceiro projeto desenvolvido na trilha Ignite da Rocketseat com ReactJS, Styled-Components e TypeScript. A ideia foi criar uma aplicação de gerenciamento de entradas e saidas de capital para organizar melhor a parte financeira. 

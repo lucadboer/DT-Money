@@ -2,9 +2,7 @@
 
 ![preview](./.github/preview.png)
 
-> Trilha Ignite
-
-Terceiro projeto desenvolvido na trilha Ignite da Rocketseat com ReactJS, Styled-Components e TypeScript. A ideia foi criar uma aplicação de gerenciamento de entradas e saidas de capital para organizar melhor a parte financeira. 
+A ideia foi criar uma aplicação de gerenciamento de entradas e saidas de capital para organizar melhor a parte financeira. 
 
 Além de todos os fundamentos do React, foi utilizado ContextAPI para compartilhar os dados entre componentes, a criação de uma Fake API através do json-server, um pouco de hooks, e para a estilização foi aplicado o Styled-Components.
 
